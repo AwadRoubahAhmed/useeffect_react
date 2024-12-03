@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Decompte from "./Decompte";
 
 export default function Text() {
   //State;
@@ -7,7 +8,7 @@ export default function Text() {
 
   useEffect(() => {
     console.log("componentDidMount Lecture 2 => useEffect");
-  },[]);
+  }, []);
 
   console.log("render 2 TOUJOURS Lecture 1");
 
@@ -34,6 +35,8 @@ export default function Text() {
       >
         Increment
       </button>
+
+      <Decompte />
     </div>
   );
 }
